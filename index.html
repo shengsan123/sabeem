@@ -1,0 +1,18 @@
+<!-- 首页商品展示 -->
+<div id="home">
+  <h1>商品列表</h1>
+  <div class="product-list">
+    <!-- 示例商品 -->
+    <div class="product" onclick="goToDetails(1)">
+      <img src="product1.jpg" alt="商品图片">
+      <h3>Steam激活码</h3>
+      <p>价格: ￥100</p>
+    </div>
+    <!-- 更多商品 -->
+  </div>
+</div>
+<script>
+function goToDetails(productId) {
+  window.location.href = `/product-details.html?id=${productId}`;
+}
+</script>
